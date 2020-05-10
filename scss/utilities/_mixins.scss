@@ -3,3 +3,10 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+@mixin flexy($disp: flex, $dir: null, $ali: null, $just: null) {
+  display: $disp;
+  flex-direction: $dir;
+  align-items: $ali;
+  justify-content: $just;
+}

@@ -4,12 +4,18 @@
 
 .container {
   padding: 0 10px;
+  @media ($break-m) {
+    @include center;
+    max-width: 1400px;
+  }
 }
 
 .row {
-  display: flex;
-  flex-direction: column;
+  @include flexy(flex, column);
   padding: 1em 10px;
+  @media ($break-m) {
+    @include flexy($dir: row);
+  }
 }
 
 [class^="col"] {
@@ -18,13 +24,18 @@
   min-height: 25px;
   padding: 10px;
   border-radius: 5px;
+  @media ($break-m) {
+    @include flexy($just: center, $ali: center);
+    margin-top: 0;
+    & + & {
+      margin-left: 10px;
+    }
+  }
 }
 
-.theme {
-  @for $i from 1 through 12 {
-    &.col-#{$i} {
-      background-color: nth($grid-colors, $i);
-    }
+@for $i from 1 through 12 {
+  .theme.col-#{$i} {
+    background-color: nth($grid-colors, $i);
   }
 }
 

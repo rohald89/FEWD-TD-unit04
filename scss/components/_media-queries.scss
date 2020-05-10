@@ -1,49 +1,14 @@
 /* ============================================= */
 /*              Media Queries                    */
 /* ============================================= */
-@media (min-width: 768px) {
-  .container {
-    @include center;
-    max-width: 1400px;
-  }
-
+@media ($break-m) {
   .centered {
     @include center;
-  }
-
-  .row {
-    flex-direction: row;
-  }
-
-  [class^="col"] {
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
-    align-items: center;
-    & + & {
-      margin-left: 10px;
-    }
   }
 
   @for $i from 1 through 12 {
     .col-#{$i} {
       flex-basis: nth($flex-basis, $i);
-    }
-  }
-
-  .nav {
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    &-link {
-      flex-basis: 100px;
-    }
-  }
-
-  .btn {
-    padding: 10px 30px;
-    & + & {
-      margin-left: 10px;
     }
   }
 

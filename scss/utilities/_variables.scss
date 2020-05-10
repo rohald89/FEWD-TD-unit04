@@ -1,6 +1,7 @@
+// COLORS =============== //
 $primary-color: #58e1c1;
 $white: #fff;
-$light-grey: #eee;
+$light-grey: #ccc;
 $grey: #777;
 
 $button-colors: (
@@ -26,6 +27,7 @@ $grid-colors: (
   #80e8d1
 );
 
+// FLEX =============== //
 $flex-basis: (
   8.33%,
   16.67%,
@@ -40,3 +42,7 @@ $flex-basis: (
   91.67%,
   100%
 );
+
+// BREAKPOINT ======== //
+
+$break-m: "min-width: 768px";

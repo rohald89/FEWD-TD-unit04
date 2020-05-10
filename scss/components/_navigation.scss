@@ -5,8 +5,7 @@
 .nav {
   padding-left: 0;
   flex-basis: 100%;
-  display: flex;
-  flex-direction: column;
+  @include flexy(flex, column);
   &-link {
     text-align: center;
     border-radius: 5px;
@@ -17,6 +16,12 @@
     &:hover {
       color: $white;
       background-color: $primary-color;
+    }
+  }
+  @media ($break-m) {
+    @include flexy(null, row, center, flex-end);
+    &-link {
+      flex-basis: 100px;
     }
   }
 }
