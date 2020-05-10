@@ -10,3 +10,9 @@
   align-items: $ali;
   justify-content: $just;
 }
+
+@mixin mq {
+  @media ($break-m) {
+    @content;
+  }
+}

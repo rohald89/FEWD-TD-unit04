@@ -18,7 +18,7 @@
       background-color: $primary-color;
     }
   }
-  @media ($break-m) {
+  @include mq {
     @include flexy(null, row, center, flex-end);
     &-link {
       flex-basis: 100px;
