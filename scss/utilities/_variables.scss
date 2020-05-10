@@ -1,0 +1,42 @@
+$primary-color: #58e1c1;
+$white: #fff;
+$light-grey: #eee;
+$grey: #777;
+
+$button-colors: (
+  "default": #51ddfc,
+  "error": #e4757a,
+  "info": #927bc1,
+  "success": #63cc82,
+  "warning": #fd7856,
+);
+
+$grid-colors: (
+  #927bc1,
+  #fd7856,
+  #deb2ee,
+  #7ee6fd,
+  #88d9a0,
+  #4da2bb,
+  #ec9fa3,
+  #fd9f85,
+  #e4757a,
+  #63cc82,
+  #51ddfc,
+  #80e8d1
+);
+
+$flex-basis: (
+  8.33%,
+  16.67%,
+  25%,
+  33.33%,
+  41.67%,
+  50%,
+  58.33%,
+  66.67%,
+  75%,
+  83.33%,
+  91.67%,
+  100%
+);
